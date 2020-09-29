@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react";
+import Nyit from './components/Nyit';
+import Container from './components/Container';
 import './App.css';
+import { useAuth0 } from "@auth0/auth0-react";
 
-function App() {
+export const appContext = React.createContext([{}, () => {}])
+
+const App = () => {
+
+  const [ authenticated = false, setAuthenticated ] = useState([]);
+  const {
+    user,
+    isAuthenticated,
+    loginWithRedirect,
+    logout,
+  } = useAuth0();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {console.log('app user ', user)}
+    {console.log('app authenticated ', authenticated)}
+      <appContext.Provider value = {[authenticated, setAuthenticated]}>
+        {isAuthenticated ? <Container /> : <Nyit />}
+      </appContext.Provider>
     </div>
   );
 }
