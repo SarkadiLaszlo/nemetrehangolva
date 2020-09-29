@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import './Nyit.css'
 import BackgroundSlider from 'react-background-slider'
 import alap1 from '../assets/alap11.jpg'
@@ -10,20 +10,14 @@ import alap6 from '../assets/alap61.jpg'
 import alap7 from '../assets/alap71.jpg'
 import ButtonBelepes from './buttons/ButtonBelepes'
 import { useAuth0 } from "@auth0/auth0-react";
-import { appContext } from '../App'
 
 
 let pictures = []
 
 function Nyit() {
 
-  const [ authenticated, setAuthenticated ] = useContext(appContext);
-  const {
-    user,
-    isAuthenticated,
-    loginWithRedirect,
-    logout,
-  } = useAuth0();
+
+  const { loginWithRedirect } = useAuth0();
 
   useEffect(() => {  }, [])
 

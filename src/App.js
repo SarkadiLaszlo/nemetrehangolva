@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Nyit from './components/Nyit';
 import Container from './components/Container';
 import './App.css';
@@ -19,7 +19,6 @@ const App = () => {
   return (
     <div className="App">
     {console.log('app user ', user)}
-    {console.log('app authenticated ', authenticated)}
       <appContext.Provider value = {[authenticated, setAuthenticated]}>
         {isAuthenticated ? <Container /> : <Nyit />}
       </appContext.Provider>

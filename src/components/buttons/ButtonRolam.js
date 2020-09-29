@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import './ButtonRolam.css';
 import buttonRolam from '../../assets/buttonRolam.png'
 
-let buttonClose = 'invisible'
 
 class ButtonRolam extends Component {
 
@@ -14,10 +13,10 @@ class ButtonRolam extends Component {
       <div className="flip-box">
         <div className="flip-box-inner">
           <div className="flip-box-front">
-            <img src = {buttonRolam} ></img>
+            <img src = {buttonRolam} alt = 'rolam' ></img>
           </div>
         <div className="flip-box-back">
-          <img src = {buttonRolam} onMouseDown={this.props.handleRolam} ></img>
+          <img src = {buttonRolam} alt = 'rolam' onMouseDown={this.props.handleRolam} ></img>
         </div>
       </div>
     </div>

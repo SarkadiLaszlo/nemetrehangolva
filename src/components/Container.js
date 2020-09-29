@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import './Container.css'
 import BackgroundSlider from 'react-background-slider'
 import alap1 from '../assets/alap1.jpg'
@@ -13,21 +13,12 @@ import ButtonRolam from './buttons/ButtonRolam'
 import ButtonFeladatok from './buttons/ButtonFeladatok'
 import ButtonOktatas from './buttons/ButtonOktatas'
 import ButtonVizsga from './buttons/ButtonVizsga'
-import { useAuth0 } from "@auth0/auth0-react";
 import { appContext } from '../App'
 
 
 let pictures = []
 
 function Container() {
-
-  const [ authenticated, setAuthenticated ] = useContext(appContext);
-  const {
-    user,
-    isAuthenticated,
-    loginWithRedirect,
-    logout,
-  } = useAuth0();
 
   useEffect(() => {  }, [])
 
