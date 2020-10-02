@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/nemetrehangolva/static/css/main.298f8ba4.chunk.css",
+    "main.js": "/nemetrehangolva/static/js/main.d52b73c6.chunk.js",
+    "main.js.map": "/nemetrehangolva/static/js/main.d52b73c6.chunk.js.map",
+    "runtime-main.js": "/nemetrehangolva/static/js/runtime-main.2e926c01.js",
+    "runtime-main.js.map": "/nemetrehangolva/static/js/runtime-main.2e926c01.js.map",
+    "static/js/2.efaa8b28.chunk.js": "/nemetrehangolva/static/js/2.efaa8b28.chunk.js",
+    "static/js/2.efaa8b28.chunk.js.map": "/nemetrehangolva/static/js/2.efaa8b28.chunk.js.map",
+    "index.html": "/nemetrehangolva/index.html",
+    "precache-manifest.cf86c7a8f8a6e89d37e85de021a97772.js": "/nemetrehangolva/precache-manifest.cf86c7a8f8a6e89d37e85de021a97772.js",
+    "service-worker.js": "/nemetrehangolva/service-worker.js",
+    "static/css/main.298f8ba4.chunk.css.map": "/nemetrehangolva/static/css/main.298f8ba4.chunk.css.map",
+    "static/js/2.efaa8b28.chunk.js.LICENSE.txt": "/nemetrehangolva/static/js/2.efaa8b28.chunk.js.LICENSE.txt",
+    "static/media/alap1.jpg": "/nemetrehangolva/static/media/alap1.1f00f42f.jpg",
+    "static/media/alap11.jpg": "/nemetrehangolva/static/media/alap11.27e2a62d.jpg",
+    "static/media/alap2.jpg": "/nemetrehangolva/static/media/alap2.4b35fcc6.jpg",
+    "static/media/alap21.jpg": "/nemetrehangolva/static/media/alap21.c030deba.jpg",
+    "static/media/alap3.jpg": "/nemetrehangolva/static/media/alap3.1f2fffb7.jpg",
+    "static/media/alap31.jpg": "/nemetrehangolva/static/media/alap31.d16aad23.jpg",
+    "static/media/alap4.jpg": "/nemetrehangolva/static/media/alap4.17c56bdb.jpg",
+    "static/media/alap41.jpg": "/nemetrehangolva/static/media/alap41.c8e5df41.jpg",
+    "static/media/alap5.jpg": "/nemetrehangolva/static/media/alap5.ddbf8195.jpg",
+    "static/media/alap51.jpg": "/nemetrehangolva/static/media/alap51.284deab6.jpg",
+    "static/media/alap6.jpg": "/nemetrehangolva/static/media/alap6.85aae5d9.jpg",
+    "static/media/alap61.jpg": "/nemetrehangolva/static/media/alap61.6fed27d0.jpg",
+    "static/media/alap7.jpg": "/nemetrehangolva/static/media/alap7.edf0c07e.jpg",
+    "static/media/alap71.jpg": "/nemetrehangolva/static/media/alap71.c6197007.jpg",
+    "static/media/alap8.jpg": "/nemetrehangolva/static/media/alap8.d1b9c219.jpg",
+    "static/media/buttonBelepes.png": "/nemetrehangolva/static/media/buttonBelepes.2acec85b.png",
+    "static/media/buttonFeladatok.png": "/nemetrehangolva/static/media/buttonFeladatok.d250d031.png",
+    "static/media/buttonOktatas.png": "/nemetrehangolva/static/media/buttonOktatas.344fd9a5.png",
+    "static/media/buttonRolam.png": "/nemetrehangolva/static/media/buttonRolam.c6d0fd8b.png",
+    "static/media/buttonVizsga.png": "/nemetrehangolva/static/media/buttonVizsga.9e3c8b72.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e926c01.js",
+    "static/js/2.efaa8b28.chunk.js",
+    "static/css/main.298f8ba4.chunk.css",
+    "static/js/main.d52b73c6.chunk.js"
+  ]
+}
