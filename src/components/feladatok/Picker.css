@@ -1,0 +1,26 @@
+#picker {
+  position: absolute;
+  width: 10vw;
+  height: 60vh;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  background-color:#e6e6e6;
+  border-radius: 20px;
+  opacity: 0.85;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#picker.hide {
+  opacity: 0;
+}
+#picker.show {
+opacity: 1;
+}
+
+#pickerFeladat {
+  position: relative;
+
+
+
+}

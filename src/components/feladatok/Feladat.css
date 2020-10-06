@@ -1,0 +1,26 @@
+#feladat {
+  position: relative;
+  width: 45vw;
+  height: 60vh;
+  margin-left: 12vw;
+  margin-top: 2vh;
+  background-color:#e6e6e6;
+  border-radius: 20px;
+  opacity: 0.85;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#feladat.hide {
+  opacity: 0;
+}
+#feladat.show {
+opacity: 1;
+}
+
+#pickerFeladat {
+  position: relative;
+
+
+
+}

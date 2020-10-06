@@ -1,0 +1,35 @@
+#egyFeladat {
+  position: relative;
+  width: 38vw;
+  height: auto;
+  padding: 5px;
+  background-color:#ccddff;
+  border-radius: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#egyFeladat.hide {
+  opacity: 0;
+}
+#egyFeladat.show {
+opacity: 1;
+}
+
+#floatingButtonOk {
+  margin-left: 28vw;
+  margin-top: 1vh;
+  z-index: 1111;
+}
+
+#wrong {
+  width: 9vw;
+  max-height: 2vh;
+  background-color:#ff8080;
+}
+
+#right {
+  width: 9vw;
+  max-height: 2vh;
+  background-color: #85e085;
+}

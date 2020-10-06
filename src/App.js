@@ -15,11 +15,18 @@ const App = () => {
     loginWithRedirect,
     logout,
   } = useAuth0();
+  const [ appContactList, setAppContactList ] = useState([]);
+
+  const saveUser = () => {
+    appContactList.push(user.name)
+  }
+
+
 
   return (
     <div className="App">
-    {console.log('app user ', user)}
-      <appContext.Provider value = {[authenticated, setAuthenticated]}>
+    {user == undefined ? console.log('USER UNDEF ') : saveUser()}
+      <appContext.Provider value = {[authenticated, setAuthenticated, appContactList, setAppContactList, user]}>
         {isAuthenticated ? <Container /> : <Nyit />}
       </appContext.Provider>
     </div>

@@ -1,0 +1,29 @@
+#user {
+  width: 20vw;
+  height: 5vh;
+  margin-left: 80vw;
+  margin-top: 3vh;
+  padding: 15px;
+  background-color: #e6ccb3;
+  border-radius: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#user.hide {
+  opacity: 0;
+}
+
+#user.show {
+opacity: 1;
+}
+
+#userPicture {
+float:left;
+}
+
+#userName {
+  font-size: large;
+  font-weight: bold;
+  line-height: 2.5;
+}
