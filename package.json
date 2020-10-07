@@ -1,6 +1,7 @@
 {
   "name": "nemetrehangolva",
   "version": "0.1.0",
+  "homepage": "https://nemetrehangolva.herokuapp.com/",
   "engines": {
     "node": "12.16.3"
   },
