@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import "./EgyFeladat.css";
 import ButtonOk from '../buttons/ButtonOk'
+import { containerContext } from '../Container'
 
 
 
@@ -11,6 +12,9 @@ let kettoValue
 
 
 function EgyFeladat(props) {
+
+  const context = useContext(containerContext)
+  let contextFeladatVisibility = context[0]
 
 const [egyStyle, setEgyStyle] = useState([])
 const [kettoStyle, setKettoStyle] = useState([])
@@ -54,7 +58,7 @@ const [kettoStyle, setKettoStyle] = useState([])
 
   return (
     <div>
-      <div id="egyFeladat" className={props.feladatokVisibility}>
+      <div id="egyFeladat" className={contextFeladatVisibility}>
         <div>
           {props.aFeladat[0]}
           {<input id = {egyStyle} type="text" name="egy" onChange={handleEgy} />}

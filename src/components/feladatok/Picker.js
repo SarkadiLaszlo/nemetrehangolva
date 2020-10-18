@@ -2,12 +2,16 @@ import React, { useState, useEffect, useContext } from 'react'
 import "./Picker.css";
 import ButtonBack from '../buttons/ButtonBack'
 import iconFeladat from '../../assets/iconFeladat.png'
+import { containerContext } from '../Container'
 
 
 let feladatPickerList = []
 let element
 
 function Picker(props) {
+
+  const context = useContext(containerContext)
+  let contextFeladatVisibility = context[0]
 
   const makeFeladatList = () => {
     feladatPickerList.length = 0
@@ -25,7 +29,7 @@ function Picker(props) {
   return (
     <div>
       {makeFeladatList()}
-      <div id="picker" className={props.feladatokVisibility}>
+      <div id="picker" className={contextFeladatVisibility}>
         <h2>Feladatok</h2>
         <div id = 'pickerFeladat'>
           {element = feladatPickerList

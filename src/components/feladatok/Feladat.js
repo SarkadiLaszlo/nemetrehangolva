@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import "./Feladat.css";
 import EgyFeladat from './EgyFeladat'
+import { containerContext } from '../Container'
 
 
 let element
@@ -10,6 +11,8 @@ let actualFeladatok = []
 
 function Feladat(props) {
 
+  const context = useContext(containerContext)
+  let contextFeladatVisibility = context[0]
 
   const click = (element) => {
     props.feladatokClick(element)
@@ -37,10 +40,11 @@ function Feladat(props) {
     }
   }
 
+  
   return (
     <div>
       {listOperations()}
-      <div id = "feladat" className={props.feladatokVisibility}>
+      <div id = "feladat" className={contextFeladatVisibility}>
         <h2>{cim[0]}</h2>
         <div id = 'pickerFeladat'>
           {actualFeladatok != undefined ? element = megoldas.map((megold, index) => (<p key={index} >{megold}</p>)) : null}

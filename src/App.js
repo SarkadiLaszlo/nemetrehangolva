@@ -8,6 +8,8 @@ export const appContext = React.createContext([{}, () => {}])
 
 const App = () => {
 
+  let actualWidth = window.innerWidth
+
   const [ authenticated = false, setAuthenticated ] = useState([]);
   const {
     user,
@@ -27,7 +29,7 @@ const App = () => {
     <div className="App">
     {user == undefined ? console.log('USER UNDEF ') : saveUser()}
       <appContext.Provider value = {[authenticated, setAuthenticated, appContactList, setAppContactList, user]}>
-        {isAuthenticated ? <Container /> : <Nyit />}
+        {isAuthenticated ? <Container actWidth = {actualWidth}/> : <Nyit />}
       </appContext.Provider>
     </div>
   );

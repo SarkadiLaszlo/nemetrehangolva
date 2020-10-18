@@ -1,30 +1,36 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, useContext } from 'react'
 import './ButtonFeladatok.css';
 import buttonFeladatok from '../../assets/buttonFeladatok.png'
-
-
-class ButtonFeladatok extends Component {
+import { containerContext } from '../Container'
 
 
 
-  render() {
+function ButtonFeladatok() {
+
+
+  const context = useContext(containerContext)
+  let contextFeladatVisibility = context[0]
+  const contextFunction = context[1]
+
+
     return (
-      <div id = 'buttonFeladatok'>
-      <div className="flip-box">
-        <div className="flip-box-inner">
-          <div className="flip-box-front">
-            <img src = {buttonFeladatok} alt = 'feladatok' ></img>
+      <div>
+        <div id = 'buttonFeladatok'>
+          <div className="flip-box">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
+                <img src = {buttonFeladatok} alt = 'oktatas' ></img>
+              </div>
+              <div className="flip-box-back">
+                <img src = {buttonFeladatok} alt = 'oktatas' onClick={(e) => contextFunction('show')} ></img>
+              </div>
+            </div>
           </div>
-        <div className="flip-box-back">
-          <img src = {buttonFeladatok} alt = 'feladatok' onMouseDown={this.props.handleFeladatok} ></img>
         </div>
       </div>
-    </div>
-    </div>
 
     );
   }
 
-}
 
 export default ButtonFeladatok;

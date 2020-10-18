@@ -1,19 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Feladatok.css";
 import ButtonBack from '../buttons/ButtonBack'
 import Picker from '../feladatok/Picker'
 import Feladat from '../feladatok/Feladat'
+import { containerContext } from '../Container'
 
-let theVisibility
 
-function Feladatok(props)  {
+function Feladatok()  {
 
 const [feladatokVisibility, setFeladatokVisibility] = useState()
 const [feladatList, setFeladatList] = useState([])
 
 useEffect(() => {
-  setFeladatokVisibility(props.feladatokVisibility)
-}, [feladatokVisibility, feladatList])
+  //contextFeladatVisibility == false ? theVisibility = 'hide' : theVisibility = 'show'
+  //{console.log('feladatok thevisibility ', theVisibility)}
+}, [ feladatList])
+
+  const context = useContext(containerContext)
+  let contextFeladatVisibility = context[0]
 
     const click = (element) => {
         console.log('click', element)
@@ -28,28 +32,23 @@ useEffect(() => {
 
     }
 
-    const onAddItem = (feladat) => {
-
-    }
-
 
   return (
     <div>
-    {props.feladatokVisibility == undefined ? theVisibility = 'hide' : props.feladatokVisibility == false ? theVisibility = 'hide' : theVisibility = 'show'}
-      <div id="flyoutMenu" className={theVisibility}>
+      <div id="flyoutMenu" className={contextFeladatVisibility}>
         <div id = "wrapper">
           <div id ="first">
-            <Picker feladatokVisibility={theVisibility} feladatokClick = {click} />
+            <Picker feladatokVisibility={contextFeladatVisibility} feladatokClick = {click} />
           </div>
           <div id = "second">
-            <Feladat feladatokVisibility={theVisibility} feladatok = {feladatList} />
+            <Feladat feladatokVisibility={contextFeladatVisibility} feladatok = {feladatList} />
           </div>
         </div>
         <div id = 'titleFeladatok'>
           <h1>Feladatok</h1>
         </div>
         <div id = 'floatingButton'>
-          <ButtonBack handleBack={props.handleFeladatok}/>
+          <ButtonBack />
         </div>
 
       </div>
